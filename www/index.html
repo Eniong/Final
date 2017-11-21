@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>Final Project</title>
+	<link rel="stylesheet" href="framework7/css/framework7.material.min.css">
+    <link rel="stylesheet" href="framework7/css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="framework7/css/my-app.css">
+</head>
+<body style="background-image: url('img/bg.jpg');">
+	<div class="center sliding" style="font-size: 50px; text-align: center; background-color: peru; opacity: 0.6;"><b>Transpose</b></div>
+		<div class="views" style="margin: 20px; ">
+		<div>
+		<h1 style="color: white;">Chords</h1>
+		<input type="text" id="src_id" style="font-size: 50px; width: 100%;">
+		</div>
+		<div style=" text-align: center; background-color: tan;">
+			<h1 style="color: white;">Transposed</h1>
+			<pre class="page-content infinite-scroll" data-distance="100" id="dst_id" style="font-size: 50px;">
+		</div>
+
+		<div class="buttons-row" style="padding-bottom: 10px;">
+
+			<a href="#" class="button button-big button-fill button-raised color-red" onclick="shiftPlus('src_id','dst_id')">Transpose +1</a>
+			<a href="#" class="button button-big button-fill button-raised color-orange" onclick="shiftPlus('src_id','dst_id')">Transpose -1</a>
+
+		</div>
+		<input class="button button-big button-fill button-raised color-gray" type="button" value="Clear" onClick="window.location.reload()">
+		
+		
+		
+        
+	</div>
+	<script src="dist/chords.js"></script>
+    <script src="js/index.js"></script>  
+</body>
+</html>
